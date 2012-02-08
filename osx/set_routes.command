@@ -24,4 +24,3 @@ get_addr() {
                         fi
                 done
 
-
