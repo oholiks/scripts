@@ -1,0 +1,23 @@
+#!/bin/bash
+
+case $1 in
+	up)
+	amixer -c 1 sset Master 5+ 1> /dev/null
+	;;
+	down)
+	amixer -c 1 sset Master 5- 1> /dev/null
+	;;
+	mute)
+	onoff=$(amixer -c 1 sget Master | awk '/Mono:/{gsub(/\[|\]/,"");print $NF}')
+	if [ "$onoff" = "on" ]; then
+		amixer -c 1 sset Master off 1> /dev/null
+	else
+		amixer -c 1 sset Master on 1> /dev/null
+		amixer -c 1 sset Speaker on 1> /dev/null
+		amixer -c 1 sset Headphone on 1> /dev/null
+	fi
+	;;
+	*)
+	;;
+esac
+
