@@ -1,0 +1,3 @@
+#$TERM="xterm -fn knickers +sb -bg white -fg black -fade 20 -depth 32"
+$TERM="urxvt -bg rgba:0000/0000/0000/dddd -fade 20 -depth 32"
+$BIGTERM="urxvt -fn 'xft:Monofur:antialias=true' -bg rgba:0000/0000/0000/dddd -fade 20 -depth 32"
