@@ -1,0 +1,2 @@
+alias add='for f in ~/.ssh/id_*[^.pub];do ssh-add $f;done'
+
