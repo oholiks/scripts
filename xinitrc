@@ -11,3 +11,4 @@ eval `cat ~/.fehbg`
 pidof conky || (conky -d)
 pidof gkrellm || (gkrellm &)
 pidof xscreensaver || (xscreensaver -nosplash &)
+ssh-agent <window-manager> # or $1 when using slim as login manager
