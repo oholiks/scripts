@@ -1,0 +1,15 @@
+URxvt.perl-ext-common:	default,url-select
+URxvt.keysym.M-u:	perl:url-select:select_next
+URxvt.urlLauncher:	firefox
+URxvt.underlineURLs:	true
+URxvt.foreground:	white
+URxvt.background:	black
+URxvt.scrollBar:	none
+URxvt.scrollTtyOutput:	false
+URxvt.scrollTtyKeypress:	false
+URxvt.termName:		xterm
+URxvt.font:	knickers
+URXvt.keysym.M-C-9:	command:\033]50;knickers\007
+URXvt.keysym.M-C-0:	command:\033]50;xft:Monofur:antialias=true\007
+
+Xcursor.theme:		FlatbedCursors.Orange.Small
